@@ -3,6 +3,7 @@ import React from "react";
 // styling
 import { makeStyles } from "@material-ui/core";
 import useGlobalStyles from "../../styles/globalStyles";
+import clsx from "clsx";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   txtWhite: {
+    marginTop: 32,
     fontWeight: 100,
     fontSize: "2rem",
     [theme.breakpoints.down("sm")]: {
@@ -55,6 +57,14 @@ const useStyles = makeStyles((theme) => ({
     },
     color: theme.palette.common.white,
     textAlign: "center",
+  },
+  icon: {
+    fontSize: "4rem",
+    color: "#ffffff22",
+    display: "none",
+    [theme.breakpoints.down("sm")]: {
+      display: "block",
+    },
   },
 }));
 
@@ -67,6 +77,7 @@ const Home = () => {
       <div className={cls.containerWrapper}>
         <div className={cls.container}>
           <div className={cls.mainTxt}>RAS YUGA</div>
+          <i className={clsx("fas fa-chevron-up mar-t-32", cls.icon)}></i>
           <div className={cls.txtWhite}>The yuga of my professional life.</div>
         </div>
       </div>
