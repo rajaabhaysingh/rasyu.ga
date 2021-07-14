@@ -11,6 +11,11 @@ const useGlobalStyles = makeStyles((theme) => ({
     color: theme.palette.common.white,
     fontSize: "1rem",
   },
+  topic: {
+    fontWeight: 500,
+    color: theme.palette.common.white,
+    fontSize: "1.2rem",
+  },
 }));
 
 export default useGlobalStyles;

@@ -4,6 +4,7 @@ import React from "react";
 import Intro from "../../components/Slides/Intro";
 import MyIntro from "../../components/Slides/MyIntro";
 import ExpBrief from "../../components/Slides/ExpBrief";
+import Projects from "../../components/Slides/Projects";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Intro />
       <MyIntro />
       <ExpBrief />
+      <Projects />
     </div>
   );
 };

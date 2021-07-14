@@ -37,7 +37,7 @@ function App() {
     themeOptions.dark = "#151515";
     themeOptions.paper = "#202020";
     themeOptions.paperDark = "#000000";
-    themeOptions.primary = "#ff1200";
+    themeOptions.primary = "#ff2200";
     themeOptions.secondary = "#1f5f5b";
     themeOptions.tertiary = "#06373a";
     themeOptions.textPrimary = "#faf7fc";

@@ -29,10 +29,10 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
   bgSecDown: {
-    padding: "0 128px 66px 128px",
+    padding: "0 128px",
     boxSizing: "border-box",
     [theme.breakpoints.down("sm")]: {
-      padding: 32,
+      padding: "32px 32px 16px 32px",
     },
     width: "100%",
     background: theme.palette.background.paper,
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     position: "relative",
     top: -80,
-    minHeight: 200,
+    height: 200,
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -86,19 +86,19 @@ const Intro = () => {
       </div>
       <div className={cls.bgSecDown}>
         <Grid spacing={4} container className="w-100 rel" justify="center">
-          <Grid item xs={10} sm={5} md={2} className={cls.item}>
+          <Grid item xs={5} sm={5} md={2} className={cls.item}>
             <img src={gramfactory} alt="" className={cls.imgItem} />
             <div className={cls.itemFooter}>SDE - intern</div>
           </Grid>
-          <Grid item xs={10} sm={5} md={2} className={cls.item}>
+          <Grid item xs={5} sm={5} md={2} className={cls.item}>
             <img src={talentio} alt="" className={cls.imgItem} />
             <div className={cls.itemFooter}>SDE - freelance</div>
           </Grid>
-          <Grid item xs={10} sm={5} md={2} className={cls.item}>
+          <Grid item xs={5} sm={5} md={2} className={cls.item}>
             <img src={a2z} alt="" className={cls.imgItem} />
             <div className={cls.itemFooter}>SDE - freelance</div>
           </Grid>
-          <Grid item xs={10} sm={5} md={2} className={cls.item}>
+          <Grid item xs={5} sm={5} md={2} className={cls.item}>
             <img src={iiits} alt="" className={cls.imgItem} />
             <div className={cls.itemFooter}>Graphics</div>
           </Grid>
