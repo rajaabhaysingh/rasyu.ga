@@ -39,12 +39,31 @@ const useStyles = makeStyles((theme) => ({
       padding: 32,
     },
   },
-  mainTxt: {
+  mainTxtContainer: {
+    display: "flex",
+    flexWrap: "wrap",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+      alignItems: "center",
+    },
+  },
+  mainTxtWhite: {
+    color: theme.palette.common.white,
+    fontWeight: 900,
+    fontSize: "7rem",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "4rem",
+    },
+    textAlign: "center",
+  },
+  mainTxtPri: {
+    marginLeft: 32,
     color: theme.palette.primary.main,
     fontWeight: 900,
     fontSize: "7rem",
     [theme.breakpoints.down("sm")]: {
       fontSize: "4rem",
+      marginLeft: 0,
     },
     textAlign: "center",
   },
@@ -59,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   icon: {
-    fontSize: "4rem",
+    fontSize: "6rem",
     color: "#ffffff22",
     display: "none",
     [theme.breakpoints.down("sm")]: {
@@ -68,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Home = () => {
+const Intro = () => {
   const cls = useStyles();
   const globalCls = useGlobalStyles();
 
@@ -76,7 +95,10 @@ const Home = () => {
     <div className={cls.root}>
       <div className={cls.containerWrapper}>
         <div className={cls.container}>
-          <div className={cls.mainTxt}>RAS YUGA</div>
+          <div className={cls.mainTxtContainer}>
+            <div className={cls.mainTxtWhite}>RAS</div>
+            <div className={cls.mainTxtPri}>YUGA</div>
+          </div>
           <i className={clsx("fas fa-chevron-up mar-t-32", cls.icon)}></i>
           <div className={cls.txtWhite}>The yuga of my professional life.</div>
         </div>
@@ -85,4 +107,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Intro;
