@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 128,
     [theme.breakpoints.down("sm")]: {
       padding: 32,
+      minHeight: "80vh",
     },
   },
   containerWrapper: {
@@ -49,7 +50,11 @@ const useStyles = makeStyles((theme) => ({
   txtWhite: {
     fontWeight: 100,
     fontSize: "2rem",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1rem",
+    },
     color: theme.palette.common.white,
+    textAlign: "center",
   },
 }));
 
