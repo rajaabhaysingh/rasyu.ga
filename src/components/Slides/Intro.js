@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     boxSizing: "border-box",
     padding: 128,
     [theme.breakpoints.down("sm")]: {
-      padding: 32,
+      padding: "32px 32px 48px 32px",
       minHeight: "80vh",
     },
   },

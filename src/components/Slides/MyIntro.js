@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
   },
   left: {
     position: "relative",
+    [theme.breakpoints.down("sm")]: {
+      order: 1,
+    },
   },
   imgLeft: {
     width: "100%",
@@ -45,6 +48,9 @@ const useStyles = makeStyles((theme) => ({
   },
   right: {
     flexDirection: "column",
+    [theme.breakpoints.down("sm")]: {
+      order: -1,
+    },
   },
 }));
 
