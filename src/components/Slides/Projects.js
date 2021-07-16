@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
     display: "flex",
+    flexDirection: "column",
     boxSizing: "border-box",
     padding: "128px",
     [theme.breakpoints.down("sm")]: {
@@ -41,6 +42,22 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 500,
     flex: 1,
   },
+  leftOutline: {
+    border: `2px solid ${theme.palette.primary.main}`,
+    position: "absolute",
+    top: 16,
+    left: 16,
+    margin: "128px !important",
+    height: "calc(100% - 256px)",
+    width: "calc(100% - 256px)",
+    [theme.breakpoints.down("sm")]: {
+      margin: "64px !important",
+      height: "calc(100% - 128px)",
+      width: "calc(100% - 128px)",
+      top: 12,
+      left: 12,
+    },
+  },
   right: {
     flexDirection: "column",
     width: "100%",
@@ -49,6 +66,15 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       order: -1,
       padding: "32px !important",
+    },
+  },
+  link: {
+    color: theme.palette.primary.main,
+    fontWeight: 500,
+    textDecoration: "none",
+    marginLeft: 16,
+    "&:hover": {
+      textDecoration: "underline",
     },
   },
 }));
@@ -62,9 +88,10 @@ const Projects = () => {
       <Grid container spacing={8}>
         <Grid item sm={12} md={6} className={cls.left}>
           <div className={cls.leftContent}>
-            Nisi cupidatat adipisicing nulla est officia quis voluptate nulla ad
-            nostrud esse laboris.
+            "Your vision should be something that can equally inspire everyone
+            who is associated with your project and not just you."
           </div>
+          <div className={cls.leftOutline}></div>
         </Grid>
         <Grid item sm={12} md={6} className={cls.right}>
           <div className={clsx(globalCls.headerWhite, "mar_b-16")}>
@@ -72,37 +99,57 @@ const Projects = () => {
           </div>
           <Divider width="60%" />
           <div className="mar_t-32 fcol">
-            <div className={globalCls.topic}>
-              Nisi cupidatat adipisicing nulla
-            </div>
+            <div className={globalCls.topic}>Blue/gray collar job portal</div>
             <div className={clsx(globalCls.txtMdWhite, "mar_t-8")}>
-              Nisi cupidatat adipisicing nulla est officia quis voluptate nulla
-              ad nostrud esse laboris. Laboris minim consequat sunt ex cupidatat
-              ex ea adipisicing sint aliquip.
+              Portal to search and post job opportunies for unorganized and
+              semi-organized sectors. <em>[MERN stack]</em>
+              <a
+                href="https://www.wilswork.ml"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cls.link}
+              >
+                {"<<"}Link{">>"}
+              </a>
             </div>
           </div>
           <div className="mar_t-16 fcol">
             <div className={globalCls.topic}>
-              Nisi cupidatat adipisicing nulla
+              Digital graphics solutions portal
             </div>
             <div className={clsx(globalCls.txtMdWhite, "mar_t-8")}>
-              Laboris minim consequat sunt ex cupidatat ex ea adipisicing sint
-              aliquip. Est mollit elit cupidatat voluptate id elit. Eiusmod
-              ullamco qui nisi incididunt amet.
+              One-stop solution to avail all kinds of graphics designing
+              services (Both B2B {"&"} B2C). <em>[MERN stack]</em>
+              <a
+                href="https://www.rabsstudio.ml"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cls.link}
+              >
+                {"<<"}Link{">>"}
+              </a>
             </div>
           </div>
           <div className="mar_t-16 fcol">
             <div className={globalCls.topic}>
-              Nisi cupidatat adipisicing nulla
+              Real-time Sign Language translation
             </div>
             <div className={clsx(globalCls.txtMdWhite, "mar_t-8")}>
-              Consequat sunt ex cupidatat ex ea adipisicing sint aliquip. Est
-              mollit elit cupidatat voluptate id elit. Eiusmod ullamco qui nisi
-              incididunt amet.
+              A mobile application that helps specially-abled subjects to
+              communicate. <em>[Tensorflow + React Native]</em>
             </div>
           </div>
         </Grid>
       </Grid>
+      <div
+        className="fcol"
+        style={{ maxWidth: 520, marginTop: 160, alignSelf: "center" }}
+      >
+        <div className={clsx(globalCls.headerWhite, "mar_b-16")}>
+          Project snippets...
+        </div>
+        <Divider width="60%" />
+      </div>
     </div>
   );
 };

@@ -36,6 +36,8 @@ const useStyles = makeStyles((theme) => ({
     },
     width: "100%",
     background: theme.palette.background.paper,
+    display: "flex",
+    flexDirection: "column",
   },
   item: {
     background: theme.palette.primary.main,
@@ -88,21 +90,35 @@ const Intro = () => {
         <Grid spacing={4} container className="w-100 rel" justify="center">
           <Grid item xs={5} sm={5} md={2} className={cls.item}>
             <img src={gramfactory} alt="" className={cls.imgItem} />
-            <div className={cls.itemFooter}>SDE - intern</div>
+            {/* <div className={cls.itemFooter}>SDE - intern</div> */}
           </Grid>
           <Grid item xs={5} sm={5} md={2} className={cls.item}>
             <img src={talentio} alt="" className={cls.imgItem} />
-            <div className={cls.itemFooter}>SDE - freelance</div>
+            {/* <div className={cls.itemFooter}>SDE - freelance</div> */}
           </Grid>
           <Grid item xs={5} sm={5} md={2} className={cls.item}>
             <img src={a2z} alt="" className={cls.imgItem} />
-            <div className={cls.itemFooter}>SDE - freelance</div>
+            {/* <div className={cls.itemFooter}>SDE - freelance</div> */}
           </Grid>
           <Grid item xs={5} sm={5} md={2} className={cls.item}>
             <img src={iiits} alt="" className={cls.imgItem} />
-            <div className={cls.itemFooter}>Graphics</div>
+            {/* <div className={cls.itemFooter}>Graphics</div> */}
           </Grid>
         </Grid>
+        <div
+          className="fcol"
+          style={{
+            maxWidth: 520,
+            marginTop: 60,
+            marginBottom: 120,
+            alignSelf: "center",
+          }}
+        >
+          <div className={clsx(globalCls.headerWhite, "mar_b-16")}>
+            So, here's a sneak-peak...
+          </div>
+          <Divider width="60%" />
+        </div>
       </div>
     </div>
   );

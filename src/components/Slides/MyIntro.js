@@ -64,10 +64,11 @@ const MyIntro = () => {
         <Grid item sm={12} md={6} className={cls.left}>
           <img src={intro} alt="" className={cls.imgLeft} />
           <div className={cls.imgPara}>
-            Nisi cupidatat adipisicing nulla est officia quis voluptate nulla ad
-            nostrud esse laboris. Laboris minim consequat sunt ex cupidatat ex
-            ea adipisicing sint aliquip. Est mollit elit cupidatat voluptate id
-            elit. Eiusmod ullamco qui nisi incididunt amet.
+            "A life portfolio offers a compelling alternative to traditional
+            retirement. It is a new way of thinking and living in extended
+            middle age. A typical portfolio is a balanced mix of some work,
+            ongoing learning, recreation, travel and avocations, reconnecting
+            with family and friends, and giving back."
           </div>
         </Grid>
         <Grid item sm={12} md={6} className={cls.right}>

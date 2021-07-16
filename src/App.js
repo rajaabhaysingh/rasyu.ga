@@ -104,7 +104,6 @@ export default App;
 // experience - 6 - {each experience linked to bottom of page with work ss - 11}
 // Projects - 8
 // education - 7
-// Skillsets - 10
 // ---- work experiences sshots ----
 // Hobbies & interests - 10
 // Contact info
