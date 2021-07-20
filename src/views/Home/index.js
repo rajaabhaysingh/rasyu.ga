@@ -23,7 +23,7 @@ const Home = () => {
       <ExpSS4 />
       <ExpSS5 />
       <Projects />
-      <ExpSS3 />
+      {/* <ExpSS3 /> */}
     </div>
   );
 };
