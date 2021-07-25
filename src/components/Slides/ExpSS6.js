@@ -6,6 +6,7 @@ import useGlobalStyles from "../../styles/globalStyles";
 import clsx from "clsx";
 
 import Divider from "../../components/Common/Divider";
+import { openImage } from "../../helpers";
 
 // assets
 import placeholder from "../../assets/placeholder.png";
@@ -69,19 +70,44 @@ const Intro = () => {
           Snippets of my job portal project.
         </Grid>
         <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
-          <img src={img1} className={cls.image} alt="" />
+          <img
+            onClick={() => openImage(img1)}
+            src={img1}
+            className={cls.image}
+            alt=""
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
-          <img src={img2} className={cls.image} alt="" />
+          <img
+            onClick={() => openImage(img2)}
+            src={img2}
+            className={cls.image}
+            alt=""
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
-          <img src={img3} className={cls.image} alt="" />
+          <img
+            onClick={() => openImage(img3)}
+            src={img3}
+            className={cls.image}
+            alt=""
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
-          <img src={img4} className={cls.image} alt="" />
+          <img
+            onClick={() => openImage(img4)}
+            src={img4}
+            className={cls.image}
+            alt=""
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
-          <img src={img5} className={cls.image} alt="" />
+          <img
+            onClick={() => openImage(img5)}
+            src={img5}
+            className={cls.image}
+            alt=""
+          />
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={6} className={cls.itemLast}>
           <div className={clsx(globalCls.headerWhite, "mar_b-16")}>

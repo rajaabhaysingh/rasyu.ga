@@ -6,6 +6,7 @@ import useGlobalStyles from "../../styles/globalStyles";
 import clsx from "clsx";
 
 import Divider from "../Common/Divider";
+import { openImage } from "../../helpers";
 
 // assets
 import placeholder from "../../assets/placeholder.png";
@@ -66,13 +67,28 @@ const Intro = () => {
     <div className={cls.root}>
       <Grid container className={cls.container}>
         <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
-          <img src={img1} className={cls.image} alt="" />
+          <img
+            onClick={() => openImage(img1)}
+            src={img1}
+            className={cls.image}
+            alt=""
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
-          <img src={img2} className={cls.image} alt="" />
+          <img
+            onClick={() => openImage(img2)}
+            src={img2}
+            className={cls.image}
+            alt=""
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
-          <img src={img3} className={cls.image} alt="" />
+          <img
+            onClick={() => openImage(img3)}
+            src={img3}
+            className={cls.image}
+            alt=""
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={3} lg={3} className={cls.itemIntro}>
           Snippets of my work as SDE freelancer.
@@ -88,10 +104,20 @@ const Intro = () => {
           </div>
         </Grid>
         <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
-          <img src={img4} className={cls.image} alt="" />
+          <img
+            onClick={() => openImage(img4)}
+            src={img4}
+            className={cls.image}
+            alt=""
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
-          <img src={img5} className={cls.image} alt="" />
+          <img
+            onClick={() => openImage(img5)}
+            src={img5}
+            className={cls.image}
+            alt=""
+          />
         </Grid>
       </Grid>
     </div>

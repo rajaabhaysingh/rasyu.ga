@@ -6,6 +6,7 @@ import useGlobalStyles from "../../styles/globalStyles";
 import clsx from "clsx";
 
 import Divider from "../Common/Divider";
+import { openImage } from "../../helpers";
 
 // assets
 import placeholder from "../../assets/placeholder.png";
@@ -64,13 +65,28 @@ const Intro = () => {
     <div className={cls.root}>
       <Grid container className={cls.container}>
         <Grid item xs={12} sm={12} md={2} lg={2} className={cls.item}>
-          <img src={img2} className={cls.image} alt="" />
+          <img
+            onClick={() => openImage(img2)}
+            src={img2}
+            className={cls.image}
+            alt=""
+          />
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4} className={cls.item}>
-          <img src={img1} className={cls.image} alt="" />
+          <img
+            onClick={() => openImage(img1)}
+            src={img1}
+            className={cls.image}
+            alt=""
+          />
         </Grid>
         <Grid item xs={12} sm={12} md={2} lg={2} className={cls.item}>
-          <img src={img3} className={cls.image} alt="" />
+          <img
+            onClick={() => openImage(img3)}
+            src={img3}
+            className={cls.image}
+            alt=""
+          />
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4} className={cls.itemLast}>
           <div className={clsx(globalCls.headerWhite, "mar_b-16")}>
