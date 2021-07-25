@@ -100,7 +100,9 @@ const Intro = () => {
             <div className={cls.mainTxtPri}>YUGA</div>
           </div>
           <i className={clsx("fas fa-chevron-up mar-t-32", cls.icon)}></i>
-          <div className={cls.txtWhite}>The yuga of my professional life.</div>
+          <div className={cls.txtWhite}>
+            The yuga of my professional life, my portfolio.
+          </div>
         </div>
       </div>
     </div>
