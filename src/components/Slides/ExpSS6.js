@@ -5,13 +5,15 @@ import { makeStyles, Grid } from "@material-ui/core";
 import useGlobalStyles from "../../styles/globalStyles";
 import clsx from "clsx";
 
-import Divider from "../Common/Divider";
+import Divider from "../../components/Common/Divider";
 
 // assets
 import placeholder from "../../assets/placeholder.png";
-import img1 from "../../assets/graphics/i1.jpg";
-import img2 from "../../assets/graphics/p1.jpg";
-import img3 from "../../assets/graphics/p2.jpg";
+import img1 from "../../assets/ww/SS1.png";
+import img2 from "../../assets/ww/SS4.png";
+import img3 from "../../assets/ww/SS3.png";
+import img4 from "../../assets/ww/SS2.png";
+import img5 from "../../assets/ww/SS5.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
   },
   item: {
     width: "100%",
-    padding: 8,
+    padding: 16,
   },
   itemLast: {
     display: "flex",
@@ -63,23 +65,32 @@ const Intro = () => {
   return (
     <div className={cls.root}>
       <Grid container className={cls.container}>
-        <Grid item xs={12} sm={12} md={2} lg={2} className={cls.item}>
-          <img src={img2} className={cls.image} alt="" />
+        <Grid item xs={12} sm={6} md={3} lg={3} className={cls.itemIntro}>
+          Snippets of my job portal project.
         </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={4} className={cls.item}>
+        <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
           <img src={img1} className={cls.image} alt="" />
         </Grid>
-        <Grid item xs={12} sm={12} md={2} lg={2} className={cls.item}>
+        <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
+          <img src={img2} className={cls.image} alt="" />
+        </Grid>
+        <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
           <img src={img3} className={cls.image} alt="" />
         </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={4} className={cls.itemLast}>
+        <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
+          <img src={img4} className={cls.image} alt="" />
+        </Grid>
+        <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
+          <img src={img5} className={cls.image} alt="" />
+        </Grid>
+        <Grid item xs={12} sm={12} md={6} lg={6} className={cls.itemLast}>
           <div className={clsx(globalCls.headerWhite, "mar_b-16")}>
-            Other Graphic designs...
+            Blue/gray collar job portal
           </div>
           <Divider />
           <div className={clsx(globalCls.txtMdWhite, "mar_t-16")}>
-            Well, it's all about posters, banners, cards, covers, ... and the
-            list goes on...
+            A portal to connect demand and supply of all kinds of
+            unskilled/semi-skilled workers in a local setup.
           </div>
         </Grid>
       </Grid>

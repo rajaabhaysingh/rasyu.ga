@@ -81,6 +81,12 @@ const MyIntro = () => {
             develop application softwares (web and native) and solve existing
             problems wih the help of technology.
           </p>
+          <p className={clsx(globalCls.txtMdWhite, "mar_t-16")}>
+            I like to spend my free time in planning for new startup ideas and
+            research about financial investments. Sometimes, I practise playing
+            musical instruments like guitars, flutes, etc. I also enjoy plying
+            badminton and football.
+          </p>
         </Grid>
       </Grid>
     </div>

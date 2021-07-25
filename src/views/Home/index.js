@@ -10,6 +10,7 @@ import ExpSS2 from "../../components/Slides/ExpSS2";
 import ExpSS3 from "../../components/Slides/ExpSS3";
 import ExpSS4 from "../../components/Slides/ExpSS4";
 import ExpSS5 from "../../components/Slides/ExpSS5";
+import ExpSS6 from "../../components/Slides/ExpSS6";
 
 const Home = () => {
   return (
@@ -23,7 +24,7 @@ const Home = () => {
       <ExpSS4 />
       <ExpSS5 />
       <Projects />
-      {/* <ExpSS3 /> */}
+      <ExpSS6 />
     </div>
   );
 };
