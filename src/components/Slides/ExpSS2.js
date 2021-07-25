@@ -36,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.5rem",
     padding: 32,
     boxSizing: "border-box",
+    [theme.breakpoints.down("sm")]: {
+      order: -1,
+    },
   },
   item: {
     width: "100%",
@@ -46,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     padding: 32,
     [theme.breakpoints.down("sm")]: {
-      order: -1,
+      order: -2,
     },
   },
   image: {

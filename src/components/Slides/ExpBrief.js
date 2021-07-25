@@ -56,8 +56,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   imgItem: {
-    maxWidth: "70%",
-    maxHeight: "50%",
+    maxWidth: "90%",
+    maxHeight: "90%",
   },
   itemFooter: {
     position: "absolute",
@@ -89,20 +89,20 @@ const Intro = () => {
       <div className={cls.bgSecDown}>
         <Grid spacing={4} container className="w-100 rel" justify="center">
           <Grid item xs={5} sm={5} md={2} className={cls.item}>
-            <a className="fcc" href="https://www.gramfactory.com">
+            <a className="fcc w-100 h-100" href="https://www.gramfactory.com">
               <img src={gramfactory} alt="" className={cls.imgItem} />
             </a>
             {/* <div className={cls.itemFooter}>SDE - intern</div> */}
           </Grid>
           <Grid item xs={5} sm={5} md={2} className={cls.item}>
-            <a className="fcc" href="https://www.talentio.in">
+            <a className="fcc w-100 h-100" href="https://www.talentio.in">
               <img src={talentio} alt="" className={cls.imgItem} />
             </a>
             {/* <div className={cls.itemFooter}>SDE - freelance</div> */}
           </Grid>
           <Grid item xs={5} sm={5} md={2} className={cls.item}>
             <a
-              className="fcc"
+              className="fcc w-100 h-100"
               href={`https://play.google.com/store/apps/details?id=com.a2zcustomizedproducts.application&hl=en_IN&gl=US`}
             >
               <img src={a2z} alt="" className={cls.imgItem} />
@@ -110,7 +110,7 @@ const Intro = () => {
             {/* <div className={cls.itemFooter}>SDE - freelance</div> */}
           </Grid>
           <Grid item xs={5} sm={5} md={2} className={cls.item}>
-            <a className="fcc" href="https://www.iiits.ac.in">
+            <a className="fcc w-100 h-100" href="https://www.iiits.ac.in">
               <img src={iiits} alt="" className={cls.imgItem} />
             </a>
             {/* <div className={cls.itemFooter}>Graphics</div> */}

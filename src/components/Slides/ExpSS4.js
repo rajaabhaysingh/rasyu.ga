@@ -91,7 +91,7 @@ const Intro = () => {
             alt=""
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={2} lg={2} className={cls.item}>
+        <Grid item xs={6} sm={6} md={2} lg={2} className={cls.item}>
           <img
             onClick={() => openImage(img3)}
             src={img3}
@@ -99,7 +99,7 @@ const Intro = () => {
             alt=""
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={2} lg={2} className={cls.item}>
+        <Grid item xs={6} sm={6} md={2} lg={2} className={cls.item}>
           <img
             onClick={() => openImage(img2)}
             src={img2}
