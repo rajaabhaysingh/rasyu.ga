@@ -67,7 +67,7 @@ const Intro = () => {
     <div className={cls.root}>
       <Grid container className={cls.container}>
         <Grid item xs={12} sm={6} md={3} lg={3} className={cls.itemIntro}>
-          Snippets of my job portal project.
+          Snippets of the website...
         </Grid>
         <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>
           <img
@@ -111,7 +111,7 @@ const Intro = () => {
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={6} className={cls.itemLast}>
           <div className={clsx(globalCls.headerWhite, "mar_b-16")}>
-            Blue/gray collar job portal
+            Job portal for semi-organised sector
           </div>
           <Divider />
           <div className={clsx(globalCls.txtMdWhite, "mar_t-16")}>

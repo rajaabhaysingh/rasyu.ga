@@ -94,16 +94,16 @@ const Intro = () => {
           />
         </Grid>
         <Grid item xs={12} sm={6} md={3} lg={3} className={cls.itemIntro}>
-          Snippets of my work as SDE freelancer.
+          Snippets of my work as a freelancer.
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={6} className={cls.itemLast}>
           <div className={clsx(globalCls.headerWhite, "mar_b-16")}>
-            Talentio freelance
+            Talentio
           </div>
           <Divider />
           <div className={clsx(globalCls.txtMdWhite, "mar_t-16")}>
-            LMS portal for both management and selling of academic/non-academic
-            courses.
+            LMS portal for creation, management and selling of
+            academic/non-academic courses.
           </div>
         </Grid>
         <Grid item xs={12} sm={6} md={3} lg={3} className={cls.item}>

@@ -77,9 +77,9 @@ const MyIntro = () => {
           </div>
           <Divider width="60%" />
           <p className={clsx(globalCls.txtMdWhite, "mar_t-32")}>
-            I'm currently a final-year undergrad, who loves to design and
-            develop application softwares (web and native) and solve existing
-            problems wih the help of technology.
+            I'm currently a final-year undergraduate student, who loves to
+            design and develop application softwares (web and native) and solve
+            existing problems wih the help of technology.
           </p>
           <p className={clsx(globalCls.txtMdWhite, "mar_t-16")}>
             I like to spend my free time in planning for new startup ideas and

@@ -99,7 +99,7 @@ const Projects = () => {
           </div>
           <Divider width="60%" />
           <div className="mar_t-32 fcol">
-            <div className={globalCls.topic}>Blue/gray collar job portal</div>
+            <div className={globalCls.topic}>Blue/Gray collar job portal</div>
             <div className={clsx(globalCls.txtMdWhite, "mar_t-8")}>
               Portal to search and post job opportunies for unorganized and
               semi-organized sectors. <em>[MERN stack]</em>
@@ -114,9 +114,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="mar_t-16 fcol">
-            <div className={globalCls.topic}>
-              Digital graphics solutions portal
-            </div>
+            <div className={globalCls.topic}>Digital Graphics Solutions</div>
             <div className={clsx(globalCls.txtMdWhite, "mar_t-8")}>
               One-stop solution to avail all kinds of graphics designing
               services (Both B2B {"&"} B2C). <em>[MERN stack]</em>
@@ -132,7 +130,7 @@ const Projects = () => {
           </div>
           <div className="mar_t-16 fcol">
             <div className={globalCls.topic}>
-              Real-time Sign Language translation
+              Real-time Sign Language Translation
             </div>
             <div className={clsx(globalCls.txtMdWhite, "mar_t-8")}>
               A mobile application that helps specially-abled subjects to

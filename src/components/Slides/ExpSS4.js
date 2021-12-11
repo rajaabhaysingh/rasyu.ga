@@ -72,7 +72,7 @@ const Intro = () => {
           </div>
           <Divider />
           <div className={clsx(globalCls.txtMdWhite, "mar_t-16")}>
-            Some of my contributions towards logo designing.
+            These designs are being used by organisations of various sizes.
           </div>
         </Grid>
         <Grid item xs={6} sm={6} md={2} lg={2} className={cls.item}>

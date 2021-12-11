@@ -99,7 +99,7 @@ const Intro = () => {
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4} className={cls.itemLast}>
           <div className={clsx(globalCls.headerWhite, "mar_b-16")}>
-            Android App Dev
+            Android Development
           </div>
           <Divider />
           <div className={clsx(globalCls.txtMdWhite, "mar_t-16")}>
